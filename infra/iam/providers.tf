@@ -2,7 +2,7 @@ terraform {
   required_version = ">= 1.0"
   backend "s3" {
     bucket = "terraform-state-taraki"
-    key    = "service/terraform.tfstate"
+    key    = "iam/terraform.tfstate"
     region = "ap-northeast-1"
   }
   required_providers {
